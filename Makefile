@@ -6,7 +6,7 @@
 #    By: aghounam <aghounam@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/04/06 04:09:48 by hkchikec          #+#    #+#              #
-#    Updated: 2023/11/07 13:21:36 by aghounam         ###   ########.fr        #
+#    Updated: 2023/11/12 11:55:03 by aghounam         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -33,15 +33,17 @@ LIBC = ar rcs
 RM = rm -f
 OBJ = $(MANDA_SRCS:.c=.o)
 BONUS_OBJ = $(BONUS_SRCS:.c=.o)
-$(NAME):
-	$(CC) $(CFLAGS) -c $(MANDA_SRCS)
-	$(LIBC) $(NAME) $(OBJ)
 
 all: $(NAME)
 
-bonus: all
-	$(CC) $(CFLAGS) -c $(BONUS_SRCS)
+$(NAME): $(OBJ)
+	$(LIBC) $(NAME) $(OBJ)
+
+bonus: all $(BONUS_OBJ)
 	$(LIBC) $(NAME) $(BONUS_OBJ)
+
+%.o: %.c %.h
+	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
 	$(RM) $(BONUS_OBJ) $(OBJ)

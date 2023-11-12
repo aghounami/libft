@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstadd_back.c                                   :+:      :+:    :+:   */
+/*   ft_lstadd_back_bonus.c                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aghounam <aghounam@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/05 18:34:31 by aghounam          #+#    #+#             */
-/*   Updated: 2023/11/05 23:16:46 by aghounam         ###   ########.fr       */
+/*   Updated: 2023/11/11 15:02:51 by aghounam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,20 +26,19 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 	else
 		*lst = new;
 }
-/*#include <stdio.h>
+// #include <stdio.h>
 
-  int main()
-  {
-
-  char *str = "sgdgd";
-  char *fg = "ahmed";
-  t_list *list =ft_lstnew(str);
-  t_list *t = ft_lstnew(fg);
-  ft_lstadd_back(&list, t);
-  t_list *current = list;
-
-  printf("%s", (char *)current->content);
-  free(list);
-  free(t);
-  return 0;
-  }*/
+// int main()
+// {
+// 	t_list	*lst = NULL;	
+// 	t_list 	*new = ft_lstnew("hello");
+// 	t_list *new2 = ft_lstnew("world");
+// 	ft_lstadd_back(&lst, new);
+// 	ft_lstadd_back(&lst, new2);
+//     while (lst)
+//     {
+//         printf("%s ", (char *)lst->content);
+//         lst = lst->next;
+//     }
+// 	return 0;
+// }

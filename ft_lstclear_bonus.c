@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstclear.c                                      :+:      :+:    :+:   */
+/*   ft_lstclear_bonus.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aghounam <aghounam@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/05 21:52:50 by aghounam          #+#    #+#             */
-/*   Updated: 2023/11/05 22:35:22 by aghounam         ###   ########.fr       */
+/*   Updated: 2023/11/12 12:30:19 by aghounam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,42 +15,41 @@
 void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
 	t_list	*tmp;
-	t_list	*head;
 
 	if (!lst || !del)
-	{
 		return ;
-	}
-	head = *lst;
-	while (head)
+	while (*lst && lst)
 	{
-		tmp = head->next;
-		(del)(head->content);
-		free(head);
-		head = tmp;
+		tmp = (*lst)->next;
+		ft_lstdelone(*lst, del);
+		*lst = tmp;
 	}
-	*lst = NULL;
 }
-/*void ft_free(void *ds)
-  {
-  free(ds);
-  }
-#include <stdio.h>
-
-int main()
-{
-char *str = "sgdgd";
-t_list *s =ft_lstnew(str);
-s->content = malloc(10);
-ft_strlcpy(s->content, str, sizeof(str));
-printf("sefesfws: %s\n", s->content);
-t_list *s2 =ft_lstnew(str);
-s2->content = malloc(10);
-ft_strlcpy(s2->content, str, sizeof(str));
-printf("dfdddd : %s\n", s2->content);
-s->next = s2;
-ft_lstclear(&s, ft_free);
-if(s == NULL)  
-printf("null");
-return 0;
-}*/
+// void ft_free(void *content)
+// {
+// 	content = NULL;
+// }
+// void print_list(t_list *lst) {
+//     while (lst) {
+//         printf("%s -> ", (char *)lst->content);
+//         lst = lst->next;
+//     }
+//     printf("NULL\n");
+// }
+// #include <stdio.h>
+// int main()
+// {
+// 	t_list **list = (t_list **)malloc(sizeof(t_list));
+// 	t_list *new = ft_lstnew("hello");
+// 	t_list *first = ft_lstnew("world");	
+// 	ft_lstadd_back(list, new);
+// 	ft_lstadd_back(list, first);
+// 	printf("%p\n", (void *)new);
+// 	printf("%p\n", (void *)first);
+// 	print_list(*list);
+// 	ft_lstclear(list, ft_free);
+// 	print_list(*list);
+// 	printf("%p\n", (void *)new);
+// 	printf("%p\n", (void *)first);
+// 	return 0;
+// }

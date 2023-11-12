@@ -6,7 +6,7 @@
 /*   By: aghounam <aghounam@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/31 21:40:10 by aghounam          #+#    #+#             */
-/*   Updated: 2023/11/10 14:26:19 by aghounam         ###   ########.fr       */
+/*   Updated: 2023/11/11 13:12:54 by aghounam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,14 +30,14 @@ void	*ft_memset(void *b, int c, size_t len)
 	}
 	return (b);
 }
-/*#include <stdio.h>
-int main() 
-{
-  char str[19];
-  ft_memset(str, 'A', 5);
-  ft_memset(str + 5, 'b', 4);
-  for (size_t i = 0; i < 10; i++) {
-  printf("%c ", str[i]);
-  }
-  return 0;
-  }*/
+// #include <stdio.h>
+// int main()
+// {
+// 	int str;
+// 	ft_memset(&str, 0, 4);
+// 	ft_memset(&str, 5, 2);
+// 	ft_memset(&str, 57, 1);
+
+// 	printf("%d ", str);
+// 	return 0;
+// }

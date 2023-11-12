@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstadd_front.c                                  :+:      :+:    :+:   */
+/*   ft_lstadd_front_bonus.c                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aghounam <aghounam@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/04 14:30:28 by aghounam          #+#    #+#             */
-/*   Updated: 2023/11/05 15:56:30 by aghounam         ###   ########.fr       */
+/*   Updated: 2023/11/11 12:40:33 by aghounam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,27 +19,13 @@ void	ft_lstadd_front(t_list **lst, t_list *new)
 	new->next = *lst;
 	*lst = new;
 }
-/*#include "libft.h"
-#include <stdio.h>
+// #include <stdio.h>
 
-int main()
-{
-t_list *list = ft_lstnew("First Element");
-if (list == NULL)
-{
-perror("Error creating list");
-return 1;
-}
-ft_lstadd_front(&list, ft_lstnew("New Element 1"));
-ft_lstadd_front(&list, ft_lstnew("New Element 2"));
-ft_lstadd_front(&list, ft_lstnew("New Element 3"));
+// int main()
+// {
+// 	t_list *list;
 
-t_list *current = list;
-while (current)
-{
-printf("Element: %s\n", (char *)current->content);
-current = current->next;
-}
-
-return 0;
-}*/
+// 	t_list *new = ft_lstnew("ahmed");
+// 	ft_lstadd_front(&list, new);
+// 	printf("%s", list->content);
+// }

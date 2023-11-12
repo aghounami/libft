@@ -6,7 +6,7 @@
 /*   By: aghounam <aghounam@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/01 13:28:09 by aghounam          #+#    #+#             */
-/*   Updated: 2023/11/04 19:08:07 by aghounam         ###   ########.fr       */
+/*   Updated: 2023/11/12 12:37:23 by aghounam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,10 +30,10 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	}
 	return (dst);
 }
-/*int main()
+int main()
 {
 	char dst[] = "hello";
 	char src[] = "bonjr";
 	ft_memcpy(dst, src, 10);
 	printf("%s", dst);
-}*/
+}
