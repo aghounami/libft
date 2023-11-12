@@ -30,10 +30,10 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	}
 	return (dst);
 }
-int main()
-{
-	char dst[] = "hello";
-	char src[] = "bonjr";
-	ft_memcpy(dst, src, 10);
-	printf("%s", dst);
-}
+// int main()
+// {
+// 	char dst[] = "hello";
+// 	char src[] = "bonjr";
+// 	ft_memcpy(dst, src, 10);
+// 	printf("%s", dst);
+// }
