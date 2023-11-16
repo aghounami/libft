@@ -6,7 +6,7 @@
 /*   By: aghounam <aghounam@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/02 10:49:02 by aghounam          #+#    #+#             */
-/*   Updated: 2023/11/06 21:02:30 by aghounam         ###   ########.fr       */
+/*   Updated: 2023/11/16 10:55:54 by aghounam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,11 +37,3 @@ char	*ft_substr(const char *s, unsigned int start, size_t len)
 	sub[i] = '\0';
 	return (sub);
 }
-/*#include <stdio.h>
-int main()
-{
-	char str[] = "hello world";
-	int start = 2;
-	size_t len = 9;
-	printf("%s", ft_substr(str, start, len));
-}*/

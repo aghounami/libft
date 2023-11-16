@@ -6,7 +6,7 @@
 /*   By: aghounam <aghounam@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/02 13:50:52 by aghounam          #+#    #+#             */
-/*   Updated: 2023/11/08 20:18:19 by aghounam         ###   ########.fr       */
+/*   Updated: 2023/11/16 10:51:47 by aghounam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,10 +35,3 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	ft_strlcpy(res + lens1, s2, total);
 	return (res);
 }
-/*#include <stdio.h>
-  int main()
-  {
-  char str[] = "hello ";
-  char dst[] = "world!";
-  printf("%s", ft_strjoin(str, dst));
-  }*/

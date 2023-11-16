@@ -6,7 +6,7 @@
 /*   By: aghounam <aghounam@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/03 22:15:31 by aghounam          #+#    #+#             */
-/*   Updated: 2023/11/03 22:37:08 by aghounam         ###   ########.fr       */
+/*   Updated: 2023/11/16 10:45:52 by aghounam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,8 +32,3 @@ void	ft_putnbr_fd(int n, int fd)
 	else
 		ft_putchar_fd((n + '0'), fd);
 }
-/*int main()
-  {
-  int n = -33;
-  ft_putnbr_fd(n, 1);
-  }*/

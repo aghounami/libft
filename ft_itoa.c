@@ -6,7 +6,7 @@
 /*   By: aghounam <aghounam@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/03 16:29:04 by aghounam          #+#    #+#             */
-/*   Updated: 2023/11/10 18:00:29 by aghounam         ###   ########.fr       */
+/*   Updated: 2023/11/16 10:37:47 by aghounam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,10 +52,3 @@ char	*ft_itoa(int n)
 	}
 	return (res);
 }
-// #include <stdio.h>
-//   int main()
-//   {
-//   int n = -99;
-//   char *result = ft_itoa(n);
-//   printf("%s", result);
-//   }

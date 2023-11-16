@@ -6,31 +6,31 @@
 /*   By: aghounam <aghounam@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/03 14:29:18 by aghounam          #+#    #+#             */
-/*   Updated: 2023/11/09 12:37:03 by aghounam         ###   ########.fr       */
+/*   Updated: 2023/11/16 10:50:15 by aghounam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int	count_world(char const *s, char c)
+static int	count_words(const char *s, char c)
 {
 	int	count;
-	int	in_word;
 
 	count = 0;
-	in_word = 0;
 	while (*s)
 	{
-		if (*s == c)
+		if (*s != c)
 		{
-			in_word = 0;
-		}
-		else if (!in_word)
-		{
-			in_word = 1;
 			count++;
+			while (*s && *s != c)
+			{
+				s++;
+			}
 		}
-		s++;
+		else
+		{
+			s++;
+		}
 	}
 	return (count);
 }
@@ -68,7 +68,7 @@ static char	**ft_cpy(char **str, char const *s, char c)
 
 	j = 0;
 	i = 0;
-	while (j < count_world(s, c))
+	while (j <= count_words(s, c))
 	{
 		while (s[i] && s[i] == c)
 			i++;
@@ -95,7 +95,7 @@ char	**ft_split(char const *s, char c)
 
 	if (s == NULL)
 		return (NULL);
-	res = (char **)malloc(sizeof(char *) * (count_world(s, c) + 1));
+	res = (char **)malloc(sizeof(char *) * (count_words(s, c) + 1));
 	if (res == NULL)
 		return (NULL);
 	res = ft_cpy(res, s, c);
@@ -103,19 +103,3 @@ char	**ft_split(char const *s, char c)
 		return (NULL);
 	return (res);
 }
-/*#include <stdio.h>
-  int main()
-  {
-  char *input = "*sw*er******";
-  char delimiter = '*';
-  char **ret = ft_split(input, delimiter);
-  int i = 0;
-  while (ret[i] != NULL)
-  {
-  printf("%s\n", ret[i]);
-  free(ret[i]);
-  i++;
-  }
-  free(ret);
-  return 0;
-  }*/

@@ -6,7 +6,7 @@
 /*   By: aghounam <aghounam@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/01 16:00:35 by aghounam          #+#    #+#             */
-/*   Updated: 2023/11/10 13:08:12 by aghounam         ###   ########.fr       */
+/*   Updated: 2023/11/16 10:54:36 by aghounam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,19 +36,3 @@ char	*ft_strnstr(const char *s1, const char *s2, size_t len)
 	}
 	return (NULL);
 }
-// #include "libft.h"
-// #include <stdio.h>
-
-// int main()
-// {
-// 	const char *haystack = "";
-// 	const char *needle = "q";
-// 	size_t len = ft_strlen(haystack);
-
-// 	char *result = ft_strnstr(haystack, needle, len);
-
-// 	if (result != NULL)
-// 	{
-// 		printf("%s\n", result);
-// 	}
-// }

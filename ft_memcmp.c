@@ -6,7 +6,7 @@
 /*   By: aghounam <aghounam@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/01 14:42:28 by aghounam          #+#    #+#             */
-/*   Updated: 2023/11/12 12:27:42 by aghounam         ###   ########.fr       */
+/*   Updated: 2023/11/16 10:44:04 by aghounam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,12 +29,3 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	}
 	return (0);
 }
-// #include <stdio.h>
-// int main()
-// {
-// 	char s1[] = "s";
-// 	char s2[] = "s";
-// 	int res = ft_memcmp(s1, s2, 4);
-// 	printf("%d\n", res);
-// 	printf("%d\n", memcmp("s", "s", 4));
-// }

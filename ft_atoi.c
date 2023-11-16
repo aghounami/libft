@@ -6,25 +6,22 @@
 /*   By: aghounam <aghounam@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/01 17:46:12 by aghounam          #+#    #+#             */
-/*   Updated: 2023/11/11 19:09:21 by aghounam         ###   ########.fr       */
+/*   Updated: 2023/11/16 11:27:57 by aghounam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int	final(unsigned long int nbr, int po)
+static int	final(unsigned long nbr, int sign)
 {
-	long	num;
-
 	if (nbr > 9223372036854775807)
 	{
-		if (po == 1)
+		if (sign == 1)
 			return (-1);
-		else
-			return (0);
+		return (0);
 	}
-	num = nbr * po;
-	return (num);
+	else
+		return (nbr * sign);
 }
 
 int	ft_atoi(const char *str)
@@ -52,11 +49,3 @@ int	ft_atoi(const char *str)
 	}
 	return (final(result, sign));
 }
-
-// #include <stdio.h>
-// int main()
-// {
-// 	char str[] = "-92233720368547758054577";
-// 	printf("%d\n", atoi(str));
-// 	printf("%d\n", ft_atoi(str));
-// }

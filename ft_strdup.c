@@ -6,7 +6,7 @@
 /*   By: aghounam <aghounam@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/01 21:11:28 by aghounam          #+#    #+#             */
-/*   Updated: 2023/11/03 23:04:20 by aghounam         ###   ########.fr       */
+/*   Updated: 2023/11/13 23:46:24 by aghounam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,9 +31,3 @@ char	*ft_strdup(const char *s1)
 	res[i] = '\0';
 	return (res);
 }
-/*#include <stdio.h>
-  int main()
-  {
-  char str[] = "hello";
-  printf("%s", ft_strdup(str));
-  }*/

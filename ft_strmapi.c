@@ -6,7 +6,7 @@
 /*   By: aghounam <aghounam@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/03 20:54:32 by aghounam          #+#    #+#             */
-/*   Updated: 2023/11/11 13:07:15 by aghounam         ###   ########.fr       */
+/*   Updated: 2023/11/16 10:54:08 by aghounam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,14 +33,3 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	res [i] = '\0';
 	return (res);
 }
-// char ft_f(unsigned int n, char c)
-//   {
-//   return (c + 32);
-//   }
-// #include <stdio.h>
-// int main()
-// {
-// char str[] = "HELLO";
-// char *ar =  ft_strmapi(str,  &ft_f);
-// printf("%s", ar);
-// }

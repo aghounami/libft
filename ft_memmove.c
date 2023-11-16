@@ -6,7 +6,7 @@
 /*   By: aghounam <aghounam@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/02 12:56:52 by aghounam          #+#    #+#             */
-/*   Updated: 2023/11/10 14:27:51 by aghounam         ###   ########.fr       */
+/*   Updated: 2023/11/16 10:44:50 by aghounam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,12 +38,3 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
-/*#include <stdio.h>
-int main() 
-{
-char dst[] = "Hello, World!";
-char src[] = "world!";
-ft_memmove(dst, src, 3);
-printf("Destination: %s\n", dst);
-return 0;
-}*/

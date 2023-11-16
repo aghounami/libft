@@ -6,7 +6,7 @@
 /*   By: aghounam <aghounam@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/04 18:35:42 by aghounam          #+#    #+#             */
-/*   Updated: 2023/11/11 14:42:53 by aghounam         ###   ########.fr       */
+/*   Updated: 2023/11/16 10:40:45 by aghounam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,23 +25,3 @@ t_list	*ft_lstlast(t_list *lst)
 	}
 	return (lst);
 }
-// #include <stdio.h>
-
-//   int main()
-//   {
-//   char *str = "sgdgd";
-//   char *fg = "ahmed";
-//   t_list *h = ft_lstnew(str);
-//   t_list *s =ft_lstnew(str);
-//   t_list *t = ft_lstnew(fg);
-
-//   h->next = s;
-//   s->next = t;
-//   t->next = NULL;
-//   t_list *nnn  = ft_lstlast(h);
-//   printf("%s", nnn->content);
-//   free(h);
-//   free(s);
-//   free(t);
-//   return 0;
-//   }

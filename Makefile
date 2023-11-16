@@ -1,15 +1,3 @@
-# **************************************************************************** #
-#                                                                              #
-#                                                         :::      ::::::::    #
-#    Makefile                                           :+:      :+:    :+:    #
-#                                                     +:+ +:+         +:+      #
-#    By: aghounam <aghounam@student.42.fr>          +#+  +:+       +#+         #
-#                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2019/04/06 04:09:48 by hkchikec          #+#    #+#              #
-#    Updated: 2023/11/12 11:55:03 by aghounam         ###   ########.fr        #
-#                                                                              #
-# **************************************************************************** #
-
 MANDA_SRCS =    ft_atoi.c  ft_bzero.c ft_calloc.c \
                 ft_isalnum.c ft_isalpha.c ft_isascii.c \
                 ft_isdigit.c ft_isprint.c ft_itoa.c \
@@ -28,6 +16,7 @@ BONUS_SRCS =   ft_lstnew_bonus.c ft_lstadd_front_bonus.c \
                 ft_lstmap_bonus.c
 NAME = libft.a
 CC = gcc
+HEADER = libft.h
 CFLAGS = -Wall -Wextra -Werror
 LIBC = ar rcs
 RM = rm -f
@@ -39,10 +28,10 @@ all: $(NAME)
 $(NAME): $(OBJ)
 	$(LIBC) $(NAME) $(OBJ)
 
-bonus: all $(BONUS_OBJ)
+bonus: $(BONUS_OBJ)
 	$(LIBC) $(NAME) $(BONUS_OBJ)
 
-%.o: %.c %.h
+%.o: %.c % $(HEADER)
 	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:

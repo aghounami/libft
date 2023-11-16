@@ -6,7 +6,7 @@
 /*   By: aghounam <aghounam@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/31 21:40:10 by aghounam          #+#    #+#             */
-/*   Updated: 2023/11/11 13:12:54 by aghounam         ###   ########.fr       */
+/*   Updated: 2023/11/15 17:54:13 by aghounam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,14 +30,3 @@ void	*ft_memset(void *b, int c, size_t len)
 	}
 	return (b);
 }
-// #include <stdio.h>
-// int main()
-// {
-// 	int str;
-// 	ft_memset(&str, 0, 4);
-// 	ft_memset(&str, 5, 2);
-// 	ft_memset(&str, 57, 1);
-
-// 	printf("%d ", str);
-// 	return 0;
-// }

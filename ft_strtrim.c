@@ -6,7 +6,7 @@
 /*   By: aghounam <aghounam@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/02 15:01:53 by aghounam          #+#    #+#             */
-/*   Updated: 2023/11/07 12:20:56 by aghounam         ###   ########.fr       */
+/*   Updated: 2023/11/16 10:55:01 by aghounam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,10 +45,3 @@ char	*ft_strtrim(char const *s1, char const *set)
 	res = ft_substr(s1, start, total);
 	return (res);
 }
-/*#include <stdio.h>
-  int main()
-  {
-  char str[] = "ar   hello, world   ar";
-  char *set = "ar";
-  printf("%s\n", ft_strtrim(str, set));
-  }*/

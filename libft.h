@@ -5,16 +5,14 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: aghounam <aghounam@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/31 12:52:39 by aghounam          #+#    #+#             */
-/*   Updated: 2023/11/07 11:57:35 by aghounam         ###   ########.fr       */
+/*   Created: 2023/11/16 11:28:59 by aghounam          #+#    #+#             */
+/*   Updated: 2023/11/16 11:29:04 by aghounam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
-# define BUFF_SIZE 1
-# include <string.h>
 # include <stdlib.h>
 # include <unistd.h>
 
