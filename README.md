@@ -1,4 +1,5 @@
-Libft - Your Very First Own Library
+<div align="left">
+    Libft - Your Very First Own Library
 
 Welcome to Libft, your very first own C library! This project is part of [insert name of your curriculum or course here], where you'll learn to code a collection of general-purpose functions that you'll frequently use in your future C projects.
 Overview
@@ -30,3 +31,4 @@ Acknowledgments
 Special thanks to [insert names of any collaborators, mentors, or resources you want to acknowledge] for their support and guidance throughout this project.
 
 Feel free to customize this README to fit your specific preferences and requirements. Good luck with your Libft project! 🚀
+<div/>
