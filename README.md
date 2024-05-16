@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Libft - Your Very First Own Library</title>
-</head>
-<body>
+
     <h1>Libft - Your Very First Own Library</h1>
 
     <img src="link/to/your/logo.png" alt="Libft Logo">
@@ -45,6 +38,4 @@
     <h2>Acknowledgments</h2>
 
     <p>Special thanks to [insert names of any collaborators, mentors, or resources you want to acknowledge] for their support and guidance throughout this project.</p>
-</body>
-</html>
 
